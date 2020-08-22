@@ -1,6 +1,6 @@
 {
   "name": "@cuuki/stenciljs-storybook-lib",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Starter project for StencilJS / Storybook integration and export as npm package to use in different frameworks",
   "repository": "git://github.com/Cuuki/stenciljs-storybook-lib.git",
   "author": "Patrick Söllner",
@@ -9,10 +9,10 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "main": "dist/index.js",
-  "module": "dist/custom-elements/index.js",
+  "module": "dist/index.mjs",
   "es2015": "dist/esm/index.mjs",
   "es2017": "dist/esm/index.mjs",
-  "types": "dist/custom-elements/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/stenciljs-storybook-lib/stenciljs-storybook-lib.js",
@@ -29,5 +29,8 @@
   },
   "dependencies": {
     "@stencil/core": "^1.17.3"
+  },
+  "devDependencies": {
+    "@stencil/react-output-target": "0.0.9"
   }
 }
